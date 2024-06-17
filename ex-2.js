@@ -82,3 +82,12 @@ let orders = [
 ];
 
 // Start coding here
+function searchCustomer(){
+    for(let key in orders){
+      if(orders[key].customerName === "Birdie Shepland"){
+        console.log(` Total paid amount ${orders[key].customerName}: ${orders[key].productPrice*orders[key].productQuantity}`);
+      }
+    }
+}
+
+searchCustomer();
