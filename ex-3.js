@@ -82,3 +82,12 @@ let orders = [
 ];
 
 // Start coding here
+function typeCreditcard(){
+          for(let key in orders){
+            if(orders[key].creditCardType === "jcb"){
+              console.log(orders[key])
+            }
+          }
+}
+
+typeCreditcard();

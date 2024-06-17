@@ -82,3 +82,13 @@ let orders = [
 ];
 
 // Start coding here
+  function priceTotal(){
+    let total = 0;
+    for(let key in orders){
+      total = total + (orders[key].productPrice*orders[key].productQuantity)
+    }
+    console.log(total)
+  }
+
+
+  priceTotal();

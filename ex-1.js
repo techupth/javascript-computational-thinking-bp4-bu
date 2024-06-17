@@ -82,3 +82,15 @@ let orders = [
 ];
 
 // Start coding here
+let mostPurchase = () => {
+  let max = 0;
+  let value = {};
+  for(let key in orders){
+    if(orders[key].productPrice>max){
+      max = orders[key].productPrice;
+      value = orders[key];
+    }
+  }
+  console.log(value);
+}
+mostPurchase();
